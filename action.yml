@@ -1,0 +1,16 @@
+name: 'Codeowners Lint'
+description: 'Lints CODEOWNERS files'
+inputs:
+  dir:
+    description: 'Directory to run'
+    required: false
+    default: '.'
+  token:
+    description: 'Github token to use'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.dir }}
+    - ${{ inputs.token }}
