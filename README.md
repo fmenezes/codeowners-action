@@ -10,6 +10,8 @@ The path to the directory it should run.
 
 ## Example usage
 
+```
 uses: fmenezes/codeownerslint-action@v1
 with:
   dir: './path/to/code/'
+```
