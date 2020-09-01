@@ -8,10 +8,15 @@ This action lints CODEOWNERS file.
 
 The path to the directory it should run.
 
+### `token`
+
+The token to be used.
+
 ## Example usage
 
 ```
-uses: fmenezes/codeownerslint-action@v1
+uses: fmenezes/codeowners-action@v2
 with:
   dir: './path/to/code/'
+  token: ${{ secrets.MY_TOKEN }}
 ```
