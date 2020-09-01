@@ -17,7 +17,7 @@ jobs:
         fetch-depth: 0
     - run: git config --get remote.origin.url
     - name: Run Linter
-      uses: fmenezes/codeowners-action@v4
+      uses: fmenezes/codeowners-action@v5
       with:
         dir: '.'
         token: ${{ secrets.TOKEN }}
