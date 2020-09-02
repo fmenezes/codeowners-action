@@ -15,7 +15,6 @@ jobs:
       uses: actions/checkout@v2
       with:
         fetch-depth: 0
-    - run: git config --get remote.origin.url
     - name: Run Linter
       uses: fmenezes/codeowners-action@v5
       with:
